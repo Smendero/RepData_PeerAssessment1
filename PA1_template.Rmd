@@ -35,6 +35,7 @@ dev.off()
 meansteps <- mean(stepsDay)
 mediansteps <- median(stepsDay)
 ```
+![Sample panel plot](figure/histogram.png)
 
 mean steps per day : `r meansteps`
 median steps per day : `r mediansteps`
@@ -53,6 +54,7 @@ dev.off()
 ##find interval with maximum daily value
 maxInt <- activityInt[activityInt[,2]==max(activityInt[,2]),1]
 ```
+![Sample panel plot](figure/activity_int.png)
 
 Interval with maximum daily value: `r maxInt`
 
@@ -105,6 +107,7 @@ if(newmediansteps > mediansteps){
                 medianBy <- NULL
         }
 ```
+![Sample panel plot](figure/histogram_filldata.png)
 Number of missing values in dataset: `r sum(is.na(acDat$steps))`
 
 Mean of filled dataset: `r newmeansteps`
